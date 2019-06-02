@@ -65,6 +65,8 @@ def monopoly_with_fourth_tier
 end
 
 puts monopoly_with_fourth_tier.values[0][:names].has_key?(:reading_railroad)
+expect(monopoly_with_fourth_tier.values[0][:names].values[0].has_key?("mortgage_value")).to be true
+expect(monopoly_with_fourth_tier.values[0][:names].values[0].values[0]).to eq("$100")
 
 
 
